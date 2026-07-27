@@ -44,7 +44,7 @@ export const AddItemModal = ({ isOpen, onClose, editItem }) => {
     e.preventDefault();
     if (!name.trim()) return;
     const data = { name: name.trim(), category, quantity: Number(quantity), unit, priority, price: Number(price) || 0, notes: notes.trim(), image };
-    editItem ? updateItem({ ...editItem, ...data }) : addItem(data);
+    if (editItem) { updateItem({ ...editItem, ...data }); } else { addItem(data); }
     onClose();
   };
 

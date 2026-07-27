@@ -55,7 +55,6 @@ export const LoginPage = ({ initialJoinCode, onBack }) => {
   // Join
   const [joinName, setJoinName] = useState('');
   const [joinEmail, setJoinEmail] = useState('');
-  const [joinPasscode, setJoinPasscode] = useState('');
 
   const locked = attempts >= 5;
 
@@ -94,7 +93,7 @@ export const LoginPage = ({ initialJoinCode, onBack }) => {
   };
 
   // Accounts shown in the hint (email + masked password)
-  const credList = Object.entries(CREDENTIAL_STORE).map(([em, { password: pw, userId }]) => ({
+  const credList = Object.entries(CREDENTIAL_STORE).map(([em, { password: pw }]) => ({
     email: em,
     maskedPass: pw,
     name: em.split('@')[0].charAt(0).toUpperCase() + em.split('@')[0].slice(1),

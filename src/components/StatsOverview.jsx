@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
-import { ShoppingCart, CheckCircle2, DollarSign, Users, Plus, Zap } from 'lucide-react';
+import { ShoppingCart, DollarSign, Users, Plus, Zap } from 'lucide-react';
 
 const PRESETS = [
   { name: 'Avocados', category: 'produce', icon: '🥑', qty: 3, unit: 'pcs', price: 60 },

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
-import { X, CheckCircle2, ArrowLeft, Check } from 'lucide-react';
+import { CheckCircle2, ArrowLeft, Check } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export const ShoppingModeModal = ({ isOpen, onClose }) => {
