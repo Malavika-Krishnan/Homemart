@@ -177,7 +177,7 @@ Contributions are always welcome!
 3. Commit your changes
 4. Push your branch
 5. Open a Pull Request
-Thank you for contributing to HomeMart!
+
 ---
 
 # 📄 License
